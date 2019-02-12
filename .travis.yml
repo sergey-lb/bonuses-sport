@@ -1,9 +1,14 @@
 language: python
 python:
+  - "3.6"
   - "3.7-dev"
 
 install:
   - pip install -r requirements.txt
+  - pip install code-cov
 
 script:
-  - pytest
+  - pytest --cov=app --cov-fail-under=100
+
+after success:
+  - codecov

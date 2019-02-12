@@ -5,7 +5,7 @@ python:
 
 install:
   - pip install -r requirements.txt
-  - pip install code-cov
+  - pip install codecov
 
 script:
   - pytest --cov=app --cov-fail-under=100

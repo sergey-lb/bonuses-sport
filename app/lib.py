@@ -10,7 +10,7 @@ def calculate_bonuses(purchase_sum, purchases_total):
     >>> calculate_bonuses(1000, 1)
     50
 
-    >>> calculate_bonuses(2000, 150_00)
+    >>> calculate_bonuses(2000, 15_000)
     140
 
     >>> calculate_bonuses(3300.50, 150_000)
